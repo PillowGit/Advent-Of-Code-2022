@@ -13,6 +13,11 @@ response = {
     'Z': 'scissors'
 }
 
+# ugh
+# yeah
+# i brute forced it
+# both problems 
+# and i refuse to rewrite prettier because im lazy
 
 total = 0
 
