@@ -22,8 +22,6 @@ public:
             if (t->name == name) return t;
     }
 
-    void AddFile(int x) { files.push_back(x); }
-
     unsigned long int CalculateSize() {
         unsigned long int total = 0;
         for (int x : files) total += x;
