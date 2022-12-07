@@ -82,14 +82,16 @@ int main() {
         for (TreeNode* t : root->children) q.push(t);
     }
     
+    // Store the values in a list while backwards level order traversal properly calculates directory sizes
     std::vector<unsigned long int> targets;
     while (!s.empty()) {
         root = s.top();
         targets.push_back(root->CalculateSize());
         s.pop();
     }
+    
+    // Then find the smallest value to finish up problem 2
     std::sort(targets.begin(), targets.end());
-
     unsigned long int optimal = 0;
     for (unsigned long int x : targets) {
         if (x > (30000000-(70000000-top->size))) {
