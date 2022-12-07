@@ -69,7 +69,7 @@ int main() {
         }
     }
 
-    // Now backwards bfs for file sizes!
+    // Now backwards bfs for file sizes :D
     std::stack<TreeNode*> s;
     std::queue<TreeNode*> q;
     q.push(root);
