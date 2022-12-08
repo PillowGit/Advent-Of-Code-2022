@@ -69,7 +69,7 @@ int main() {
         }
     }
 
-    // Now backwards bfs for file sizes!
+    // Now backwards bfs for file sizes :D
     std::stack<TreeNode*> s;
     std::queue<TreeNode*> q;
     q.push(root);
@@ -79,6 +79,8 @@ int main() {
         s.push(root);
         for (TreeNode* t : root->children) q.push(t);
     }
+    
+    // Finally sum up all of our files satisfying the condition
     unsigned long int target_size = 100000;
     unsigned long long int total = 0;
     while (!s.empty()) {
